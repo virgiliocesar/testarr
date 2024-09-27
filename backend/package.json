@@ -1,0 +1,18 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start:dev": "node --env-file=.env.exemplo --watch src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "mongoose": "^8.6.3"
+  }
+}
