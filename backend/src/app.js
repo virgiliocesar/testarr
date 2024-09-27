@@ -15,6 +15,10 @@ conn();
 //? Routes
 app.use("/api/animals", animalsRoutes);
 
+app.get("/", (req, res) => {
+  res.redirect("/api/animals");
+});
+
 app.listen(process.env.PORT, () => {
   console.log("Servidor online");
 });

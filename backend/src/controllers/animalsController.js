@@ -5,6 +5,7 @@ export const getAnimals = async (req, res) => {
     const animals = await Animals.find();
     res.json(animals);
   } catch (error) {
+    console.error("Erro ao buscar capivaras:", error);
     res.status(500).json({ error: "Erro ao buscar capivaras" });
   }
 };
